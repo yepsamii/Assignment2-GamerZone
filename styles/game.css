@@ -4,6 +4,27 @@
     font-family: 'Work Sans', sans-serif;
 }
 
+/*Games Category*/
+.gcats {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    border: 1px solid pink;
+    height: 70px;
+    width: 200px;
+    border-radius: 50px;
+    background: #FFF;
+    padding: 0.65rem 1.25rem;
+    flex-shrink: 0;
+}
+
+.cat {
+    color: #0B0223;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+
 /* Footer Section */
 footer {
     width: 100%;
@@ -66,6 +87,7 @@ footer {
     font-size: 1 rem;
     font-weight: 500;
 }
-.copyright{
+
+.copyright {
     margin: 25px;
 }
