@@ -88,11 +88,71 @@
     background: #4EC5F7;
 }
 
-
 .img1 {
     width: 100%;
     height: 100%;
 }
+
+/*Cards section*/
+.videos>h2 {
+    color: #0B0223;
+    text-align: center;
+    font-family: Work Sans;
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.videos>h2>span {
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.videos>p {
+    color: #534C64;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-row-gap: 20px;
+    padding: 0 30px;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 30px;
+    flex-wrap: nowrap;
+}
+
+.gameid {
+    width: 300px;
+    height: 350px;
+    flex-shrink: 0;
+    border-radius: 16px;
+    margin-top: 10px;
+    padding-bottom: 0;
+}
+
+.cpara {
+    width: 300px;
+    color: #534C64;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 0;
+}
+
+
+
+
+
 
 
 /*Games Category*/
