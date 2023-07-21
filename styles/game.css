@@ -8,6 +8,58 @@
     --linear: linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%);
 }
 
+/*Nav Bar*/
+header {
+    height: 120px;
+    padding: 0 100px 0 100px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icon {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.icon-text1 {
+    text-align: center;
+    font-size: 45px;
+    font-weight: 700;
+}
+
+ul {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+nav li {
+    list-style: none;
+}
+
+nav button {
+    width: 250px;
+    height: 56px;
+    flex-shrink: 0;
+    border: none;
+    border-radius: 8px;
+    background: rgba(11, 2, 35, 0.10);
+    color: #3C354F;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+
 /*First Banner*/
 .banner1 {
     display: flex;
@@ -94,6 +146,7 @@
 }
 
 /*Cards section*/
+
 .videos>h2 {
     color: #0B0223;
     text-align: center;
@@ -122,6 +175,7 @@
     grid-template-columns: repeat(4, 1fr);
     grid-row-gap: 20px;
     padding: 0 30px;
+
 }
 
 .card-content {
@@ -149,11 +203,60 @@
     margin-top: 0;
 }
 
+/*Ad Section*/
+.ads {
+    display: flex;
+    gap: 100px;
+    align-items: center;
+    margin: 50px 0 50px 0;
+}
 
+.ads-1 {
+    width: 300px;
+    height: auto;
+    justify-content: flex-end;
+    padding-left: 200px;
+}
 
+.ad-title {
+    color: #0B0223;
+    font-size: 40px;
+    font-weight: 700;
+    text-align: right;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
 
+.ad-title>span {
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 
+.ad-des {
+    color: #534C64;
+    text-align: right;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 25px;
+}
 
+.ad-img-1 {
+    width: 600px;
+    height: 560px;
+    position: relative;
+    padding-left: 80px;
+    padding-right: 0;
+}
+
+.ad-img-2 {
+    width: 280px;
+    height: 320px;
+    position: absolute;
+    z-index: 1;
+    transform: translateY(300px);
+}
 
 /*Games Category*/
 .game {
@@ -266,4 +369,20 @@ footer {
 
 .copyright {
     margin: 25px;
+}
+@media screen and (max-width:450px) {
+    
+    header{
+        height: auto;
+        width: auto;
+    }
+    nav{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    ul{
+        flex-direction: column;
+
+    }
 }
